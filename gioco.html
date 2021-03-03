@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TheGame</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+      // selezione del computer
+function computerPlay () {
+    const oggetti = ["carta","sasso","forbice"]
+    let SceltaComputer = oggetti[Math.floor(Math.random()* 3 )]
+    return SceltaComputer
+}
+
+
+
+function Round () {
+
+    let sg = prompt('sasso carta O forbice ').toLowerCase();
+    console.log(sg)
+
+    let sc = computerPlay ()
+    console.log(sc)
+
+  if ( (sg === "carta" && sc === "sasso")||
+  (sg === "sasso" && sc === "forbice") ||
+  (sg === "forbice" && sc === "carta"))   {
+        return 'You win!'}
+        else if ((sc === "carta" && sg === "sasso")||
+  (sc === "sasso" && sg === "forbice") ||
+  (sc === "forbice" && sg === "carta")) {
+            return "you lose "
+        }
+       else if ((sg !== "carta")||
+       (sg !== "sasso")||
+       (sg !== "forbice")       ) {
+           return "scrivi bene capra"
+       }
+       
+        else  {
+            return "tie"
+        }  
+        }
+
+//let risultat = Round()console.log(risultat)
+
+// fare una partita funzione che ripete un match 5 volte 
+function Game() {
+    let risultato
+let patta = 0
+let punteggioComputer = 0
+let punteggioGiocatore = 0 
+for (let round = 0 ; round < 5 ; round++) {
+    risultato = Round()
+    if (risultato === 'You win!'){
+        punteggioGiocatore++
+    }
+    else if (risultato === "you lose "){
+        punteggioComputer++
+    }
+
+    
+    else if (risultato === "tie"){
+                patta++
+    }    
+
+    else {}
+       
+        console.log(patta + "patta")
+    console.log(punteggioGiocatore + "giocatore")
+    console.log(punteggioComputer + "computer")
+
+}
+// chi ha vinto?
+if (punteggioComputer < punteggioGiocatore){
+    alert("vittoria")}
+    else if (punteggioComputer > punteggioGiocatore) {alert("sconfitta")}
+    else {alert("NUL")}
+}
+
+
+Game()
+
+
+ 
+
+
+
+  </script>
+</body>
+</html>
