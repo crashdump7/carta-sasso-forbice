@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>facciata gioco</title>
+    <link rel="stylesheet" href="stile.css" />
+    <meta charset = "UTF-8"> 
+    <div class="titolo"> Carta  Sasso  Forbice</div>
+    
+    </head>
+
+    <div id='contenitoreDel'>
+        <div id='contenitore'>
+    
+            <div class="sottoTitolo">Scegli la tua arma    </div>
+            
+            <div class="stilePunteggio">
+        
+        <div class="bottoni">
+            <button id='carta'><img  class="ridimesionaImg " src=" carta.png"></button>
+            <button id='sasso'><img  class="ridimesionaImg " src=" sasso.png"></button>
+            <button id='forbice'><img  class="ridimesionaImg " src="forbice.png"></button>
+            </div>
+        
+            
+        <div class='Campo' >
+            <div id='sceltaPlayr' class="regolazioni1"></div>
+            <div id="risultato"class='stilePunteggio'></div>
+            <div id='sceltapc'class="regolazioni2" ></div>
+            </div>
+            <div id='punteggio'>NomePlayer -   0   0   - Calcolatore </div> 
+        </div>
+        
+        
+        </div>
+
+    </div>
+    <audio id='suono' src="suoni/tink.wav"></audio>
+    <audio id='suonoSad' src="suoni/sad.wav"></audio>
+    <audio id='suonohappy' src="suoni/happy.wav"></audio>
+</body>
+
+
+
+<script src="meccanica.js"></script>
+</html>

@@ -1,0 +1,125 @@
+
+head {
+    background-color: springgreen;
+}
+
+
+body {
+    background-color: rgb(78, 95, 110);
+    font-family:  Helvetica, sans-serif ;
+    text-align: center;
+
+   
+}
+
+
+
+.titolo {
+    color: rgb(236, 196, 17);
+    font-size: 100px;
+  
+    
+}
+
+#contenitoreDel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+
+}
+
+#contenitore{
+    background-color: rgb(114, 135, 155);
+    font-family:  Helvetica, sans-serif ;
+    text-align: center;
+
+    ;
+    width: 900px;
+    height: 550px;
+    margin: 40px;
+
+    border-style: solid;
+    border-color: rgb(236, 196, 17);
+    border-radius: 15px;
+
+   
+
+
+
+}
+
+.sottoTitolo {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.bottoni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bottoni button {
+    background-color: rgb(236, 196, 17);
+   
+    border-color: rgb(10, 10, 10);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px ;
+    
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+
+    padding-top: 10px;
+    padding-left: 7px;
+}
+
+button:hover {
+  border-color: rgb(10, 231, 247);
+  
+   
+
+  }
+
+.Campo {
+        display: flex;
+    justify-content: center;
+
+    
+
+}
+.regolazioni1 {   
+    padding-top: 1px;
+    padding-right:100px;
+}
+.regolazioni2 {   
+    padding-top: 1px;
+    padding-left:100px;
+}
+
+
+
+
+
+
+.ridimesionaImg {
+    width: 130px;
+  
+}
+
+.stilePunteggio {
+    font-size: 40px ;
+    padding-bottom: 1px;
+    padding-top: 20px;
+}
+
+#risultato{
+    
+    padding-bottom: 50px;
+}
+
+
